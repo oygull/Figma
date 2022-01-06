@@ -52,7 +52,7 @@ input[type='search']{
 }
 .header-search:hover{
   background-color: #464545;
-  border-radius: 10px;
+  border-radius: 5px;
   
 }
 .header-search:active{

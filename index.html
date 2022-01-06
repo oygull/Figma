@@ -5,14 +5,357 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Figma</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+  <header class="site-header">
+    <div class="header-inner row between">
+      <div class="header-search row middle">
+        <i class='bx bx-search-alt-2'></i>
+        <input placeholder="Search files,teams or people"  type="search">
+      </div>
+      <div class="header-login row middle">
+       <a href="#"><i class='bx bx-bell'></i></a> 
+       <span class="login-span">O</span>
+       <a href="#"><i class='bx bx-chevron-down' ></i></a> 
+      </div>
+    </div>
+    <div class="actions-top">
+      <a class="recents" href="#">Recently viewed</a>
+    </div>
+    <hr class="actions-line">
+    <div class="actions">
+      <ul class="actions-list row middle">
+        <li class="actions-item row middle">
+          <img src="images/action1.png" alt="action1" width="20" height="24">
+          <div class="list-content">
+            <h3 class="action-title">New esign file</h3>
+            <p class="action-desc">Design and prototype</p>
+          </div>
+          <a href="#"></a>
+          <i class='bx bx-plus' ></i>
+        </li>
+        <li class="actions-item row middle">
+          <img src="images/action2.png" alt="action2" width="20" height="24">
+          <div class="list-content">
+            <h3 class="action-title">New FigJam file</h3>
+            <p class="action-desc">Whiteboard and diagram</p>
+          </div>
+          <i class='bx bx-plus' ></i>
+        </li>
+        <li class="actions-item row middle">
+          <i class='bx bx-import' ></i>
+          <div class="list-content">
+            <h3 class="action-title">Import file</h3>
+            <p class="action-desc">Figma, Sketch and image files</p>
+          </div>
+          <i class='bx bx-plus' ></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="site-nav">
+    <div class="site-nav-inner row middle">
+      <div class="nav-logo">
+        <a href="#"><img src="https://cdn.freebiesupply.com/logos/large/2x/figma-1-logo-black-and-white.png" alt="logo" width="11" height="16"></a>
+      </div>
+       <div class="inner-desc ">
+        <h4 class="inner-desc-title">oygul</h4>
+        <p class="inner-desc-par">oygulkhon3008@gmail.com</p>
+      </div>
+      <i class='bx bx-chevron-down' ></i>
+    </div>
+    <ul class="nav-list">
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-time' ></i> 
+        <p>Recents</p> </a>
+      </li>
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-book'></i> Drafts
+      </a></li>
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-world' ></i> Community
+        <span>Beta</span>
+      </a></li>
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-up-arrow-circle'></i> Upgrade a plan for unlimited designfile in teams
+      </a>
+      <button class="nav-btn">Upgrade</button>
+    </li>
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-star' ></i> Your team and favourited projects will appear here
+      </a></li>
+      <li class="list-item"><a href="#" class="list-link">
+        <i class='bx bx-plus' ></i> Ctrate new team
+      </a></li>
+    </ul>
+  </div>
+  <main>
+    <section class="last-viewed">
+      <div class="container">
+        <div class="view-top row between middle">
+          <div class="row">
+            <p class="viewved-text">Last viewed</p>
+            <i class='bx bx-chevron-down' ></i>
+          </div>
+          <div class="row middle">
+            <i class='bx bx-border-all'></i>
+            <i class='bx bx-list-ul'></i>
+          </div>
+        </div>
+        <ul class="viewed-list row between">
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action1.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Appello</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="viewed-item">
+            <img src="https://picsum.photos/260/157" alt="img-figma">
+            <div class="viewed-desc row middle">
+              <img src="images/action2.png" alt="action" width="20" height="24">
+              <div class="viewd-desc-inner">
+                <h3 class="title">Mirage</h3>
+                <p class="par">In draft Edited 2 hours ago</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
   <script src="js/main.js"></script>
 </body>
 

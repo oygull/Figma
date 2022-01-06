@@ -80,4 +80,17 @@
   max-width: 100%;
   flex-basis: 100%;
 }
-
+.viewved-text{
+  color: #333;
+  margin-right: 10px;
+  font-size: 11px;
+}
+.bx-border-all{
+  font-size: 25px;
+  margin-right: 10px;
+  color: #30a6fb;
+}
+.bx-list-ul{
+  font-size: 24px;
+  color: #5c5c5c;
+}
